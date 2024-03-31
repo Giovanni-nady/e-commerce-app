@@ -2,6 +2,8 @@ import { View, Text, Button } from 'react-native'
 import React from 'react'
 import { useAuth } from "@clerk/clerk-expo";
 import HomeHeader from './HomeHeader.jsx';
+import Slider from './Slider.jsx';
+import Categories from './Categories.jsx';
 
 export default function HomeScreen() {
 
@@ -12,8 +14,14 @@ export default function HomeScreen() {
     return <>
 
         <HomeHeader />
+
+        <View className="p-5">
+            <Slider />
+            <Categories/>
+        </View>
+
         <View className="pt-10">
-            <Text>HomeScreen</Text>
+            
             <Button
                 title="Sign Out"
                 onPress={() => {
