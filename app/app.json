@@ -5,12 +5,12 @@
     "slug": "app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/servlix-high-resolution-logo.svg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/servlix-splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#8e3fff"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -28,7 +28,13 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/Outfit-Regular.ttf","./assets/fonts/Outfit-Medium.ttf"]
+        }
+      ]
     ]
+    
   }
 }

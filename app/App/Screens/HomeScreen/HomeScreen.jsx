@@ -4,6 +4,7 @@ import { useAuth } from "@clerk/clerk-expo";
 import HomeHeader from './HomeHeader.jsx';
 import Slider from './Slider.jsx';
 import Categories from './Categories.jsx';
+import BusinessList from './BusinessList.jsx';
 
 export default function HomeScreen() {
 
@@ -17,7 +18,8 @@ export default function HomeScreen() {
 
         <View className="p-5">
             <Slider />
-            <Categories/>
+            <Categories />
+            <BusinessList/>
         </View>
 
         <View className="pt-10">
