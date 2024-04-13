@@ -43,7 +43,7 @@ export default function Login() {
                 style={{ borderColor: '#000', borderWidth: 4 }}
             />
             <View style={{ backgroundColor: Colors.PRIMARY }} className='w-full h-3/5 mt-[-20] p-[20] rounded-t-[30px]'>
-                <Text className="text-white text-2xl text-center mt-2">Let's Find
+                <Text className="text-white text-2xl text-center mt-4">Let's Find
                     <Text className="font-bold"> Professional Cleaning and repair </Text>
                     Service</Text>
 

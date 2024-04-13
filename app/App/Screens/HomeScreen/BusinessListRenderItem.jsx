@@ -9,7 +9,9 @@ export default function BusinessListRenderItem({ item, index }) {
             <View className="flex gap-1 p-1">
                 <Text className="text-base" style={{ fontFamily: "outfit-medium" }}>{item?.name}</Text>
                 <Text className="text-sm" style={{ fontFamily: "outfit", color: Colors.GRAY }}>{item?.contactPerson}</Text>
-                <Text className="text-xs p-1 self-start rounded-md px-2" style={{ fontFamily: "outfit",color: Colors.PRIMARY, backgroundColor:Colors.Light_PRIMARY }}>{item?.category?.name}</Text>
+                <View className="rounded-md self-start" style={{ backgroundColor: Colors.Light_PRIMARY }}>
+                <Text className="text-xs p-1 px-2" style={{ fontFamily: "outfit", color: Colors.PRIMARY}}>{item?.category?.name}</Text>
+                </View>
             </View>
         </View>
     </>
